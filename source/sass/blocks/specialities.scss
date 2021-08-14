@@ -1,3 +1,32 @@
 .specialities {
   background-color: $basic-grey;
 }
+
+.specialities__headers-desc {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $basic-brown;
+  letter-spacing: 2px;
+}
+
+.specialities__headers__main-header {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $basic-white;
+  line-height: 1.2;
+}
+
+.specialities__examples {
+  list-style: none;
+}
+
+.specialities__header{
+  font-size: 22px;
+  color: $basic-white;
+  margin: 0;
+}
+
+.specialities__desc {
+  color: $basic-white;
+  margin: 0;
+}

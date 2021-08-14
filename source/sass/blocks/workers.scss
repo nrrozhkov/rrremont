@@ -1,3 +1,31 @@
 .workers {
   background-color: $basic-grey;
 }
+
+.workers__preheader {
+  font-size: 14px;
+  color: $basic-brown;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.workers__header {
+  font-weight: 500;
+}
+
+.workers__list {
+  list-style: none;
+}
+
+.workers__name {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: $basic-white;
+  font-weight: 500;
+  margin: 0;
+}
+
+.workers__desc {
+  margin: 0;
+  color: $basic-white;
+}

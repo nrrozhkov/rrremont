@@ -1,3 +1,29 @@
 .complete-works {
   background-color: $basic-grey;
 }
+
+.complete-works__list {
+  list-style: none;
+  margin: 0;
+}
+
+.complete-works__subheader {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $basic-brown;
+}
+
+.complete-works__main-header {
+  font-weight: 500;
+}
+
+.complete-works__example-header {
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.complete-works__example--desc {
+  font-size: 22px;
+  color: $basic-white;
+}

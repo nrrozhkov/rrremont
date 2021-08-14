@@ -1,0 +1,40 @@
+.main-offer {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.main-offer__headers__subheader {
+  font-size: 14px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: $basic-brown;
+  margin: 0;
+  padding: 0;
+}
+
+.main-offer__headers__main {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.main-offer__headers__additional {
+  font-size: 40px;
+  font-weight: 300;
+  color: $basic-white;
+}
+
+.main-offer__headers-desc {
+  margin: 0;
+}
+
+.main-offer__headers-minor_header {
+  font-size: 68px;
+  font-weight: 900;
+  color: $minor-header;
+  display: none;
+  margin: 0;
+
+  @media(min-width: $desktop-width) {
+    display: block;
+  }
+}
