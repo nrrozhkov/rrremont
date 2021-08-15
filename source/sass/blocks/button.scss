@@ -1,25 +1,14 @@
-//.button {
-//  font-family: "Open-sans", "Arial", sans-serif;
-//  font-weight: 700;
-//  font-size: 18px;
-//  line-height: 20px;
-//  text-transform: uppercase;
-//  text-align: center;
-//  color: $basic-white;
-//  background-color: $basic-brown;
-//  padding: 16px;
-//  height: 52px;
-//  display: inline-flex;
-//  justify-content: center;
-//  align-items: center;
-//
-//  &:hover {
-//    color: $basic-white;
-//    background-color: $basic-brown;
-//  }
-//
-//  &:active {
-//    color: $btn-white;
-//    background: linear-gradient(0deg, $basic-brown, $basic-brown);
-//  }
-//}
+.button {
+  font-family: "Open-sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-white;
+  padding: 16px;
+  height: 52px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

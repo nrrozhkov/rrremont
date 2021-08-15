@@ -1,16 +1,19 @@
 .how-we-work__preheader {
-  font-size: 60px;
+  font-size: 16px;
   color: $basic-brown;
+  text-align: center;
   margin: 0;
 }
 
 .how-we-work__list {
   list-style: none;
+  padding: 0;
 }
 
 .how-we-work__header {
   font-size: 22px;
   color: $basic-white;
+  text-align: center;
   font-weight: 500;
 }
 
