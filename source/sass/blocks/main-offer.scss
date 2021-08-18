@@ -20,7 +20,7 @@
 
 .main-offer__headers {
   @media (min-width: $tablet-width) {
-  grid-column: 1;
+    grid-column: 1;
   }
 }
 
@@ -45,7 +45,6 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-
   }
 }
 
@@ -57,7 +56,6 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-
   }
 }
 
@@ -69,7 +67,6 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-
   }
 }
 
@@ -90,7 +87,7 @@
   display: none;
   margin: 0;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
