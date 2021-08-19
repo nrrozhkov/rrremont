@@ -1,6 +1,6 @@
 .specialities {
   background-color: $basic-grey;
-  padding: 0;
+  padding: 50px 0;
 }
 
 .specialities__examples {
@@ -18,6 +18,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media(min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .specialities__example-floor,
@@ -76,12 +79,33 @@
 
 
 .specialities__headers-desc {
+  position: relative;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   color: $basic-brown;
   letter-spacing: 2px;
+  z-index: 1;
 }
+
+.specialities__headers-desc::after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "TOP SERVICES";
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    color: $span-black;
+    z-index: -100;
+    display: block;
+    left: 210px;
+    top: -55px;
+    letter-spacing: 12px;
+  }
+}
+
 
 .specialities__headers__main-header {
   font-weight: 500;
@@ -97,12 +121,14 @@
   color: $basic-white;
   margin: 0;
   text-align: center;
+  z-index: 1;
 }
 
 .specialities__desc {
   color: $basic-white;
   margin: 0;
   text-align: center;
+  z-index: 1;
 }
 
 .specialities__example-img {

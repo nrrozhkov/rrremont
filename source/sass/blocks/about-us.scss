@@ -128,17 +128,17 @@
   }
 }
 
-.about-us__img1::after {
+.about-us__img::after {
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 105px;
+    left: -200px;
+    width: 82%;
+    height: 73%;
     right: 0;
     background: #ff000000;
-    border: 10px solid black;
-    z-index: 2;
+    border: 10px solid $span-black;
+    z-index: -1;
   }
 }
