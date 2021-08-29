@@ -1,9 +1,6 @@
 .complete-works {
   padding: 50px 0;
   background-color: $basic-grey;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .complete-works__list {
@@ -11,23 +8,37 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 0;
-    width: 100%;
   }
 }
 
 .complete-works__item {
+  @media (min-width: $tablet-width) {
+    max-height: 312px;
+  }
+
   @media(min-width: $desktop-width) {
-    width: 25%;
-    height: 25%;
+    max-height: 256px;
   }
 }
 
 .complete-works__item1 {
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1;
     grid-row: 1;
@@ -35,6 +46,11 @@
 }
 
 .complete-works__item2 {
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1;
     grid-row: 2;
@@ -42,6 +58,12 @@
 }
 
 .complete-works__item3 {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2 / 2;
+    grid-row: 1 / 2;
+  }
+
+
   @media (min-width: $desktop-width) {
     grid-column-start: 2;
     grid-column-end: 2;
@@ -51,6 +73,11 @@
 }
 
 .complete-works__item4 {
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 3;
     grid-row: 1;
@@ -58,6 +85,10 @@
 }
 
 .complete-works__item5 {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 3;
+  }
   @media (min-width: $desktop-width) {
     grid-column: 3;
     grid-row: 2;
@@ -65,6 +96,10 @@
 }
 
 .complete-works__item6 {
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 4;
+  }
   @media (min-width: $desktop-width) {
     grid-column: 4;
     grid-row: 1;
@@ -72,6 +107,10 @@
 }
 
 .complete-works__item7 {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 4;
+  }
   @media (min-width: $desktop-width) {
     grid-column: 4;
     grid-row: 2;
@@ -89,6 +128,7 @@
 .complete-works__main-header {
   font-weight: 500;
   text-align: center;
+  margin-bottom: 47px;
 }
 
 .complete-works__example-header {
@@ -105,17 +145,17 @@
 
 .complete-works__item {
   position: relative;
-  &:hover {
-    .complete-works__text-block {
-      opacity: 1;
-      transition: .2s;
-    }
-  }
 }
+
 
 .complete-works__text-block {
   position: absolute;
   bottom: 0;
   left: 90px;
   opacity: 0;
+}
+
+.complete-works__img {
+  width: 100%;
+  background-size: contain;
 }
