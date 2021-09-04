@@ -1,5 +1,6 @@
 .workers {
   background-color: $basic-grey;
+  padding:50px 0;
 }
 
 .workers__preheader {
@@ -18,6 +19,14 @@
 .workers__list {
   list-style: none;
   padding: 0;
+}
+
+.workers__list-item{
+  display: none;
+}
+
+.workers__list-item-current {
+  display: block;
 }
 
 .workers__list .wrapper {

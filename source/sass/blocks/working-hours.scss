@@ -1,3 +1,9 @@
+.working-hours {
+  @media (min-width: $tablet-width){
+    width: 50%;
+  }
+}
+
 .working-hours__header {
   font-size: 18px;
   font-weight: 500;
@@ -7,4 +13,23 @@
 .working-hours-list {
   list-style: none;
   font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.working-hours__day {
+  padding-left: 15px;
+  position: relative;
+}
+
+.working-hours__day::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: $basic-brown;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }

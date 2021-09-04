@@ -1,4 +1,18 @@
 .page-footer {
   background-color: $basic-grey;
+  padding: 50px 0;
 }
 
+.page-footer .wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer-logo {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin-right: 135px;
+  }
+}

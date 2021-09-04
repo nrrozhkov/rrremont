@@ -1,6 +1,7 @@
 .complete-works {
   padding: 50px 0;
   background-color: $basic-grey;
+  max-height: 100%;
 }
 
 .complete-works__list {
@@ -25,11 +26,11 @@
 
 .complete-works__item {
   @media (min-width: $tablet-width) {
-    max-height: 312px;
+    max-height: 100%;
   }
 
   @media(min-width: $desktop-width) {
-    max-height: 256px;
+    max-height: 100%;
   }
 }
 
@@ -60,7 +61,7 @@
 .complete-works__item3 {
   @media (min-width: $tablet-width) {
     grid-column-start: 2 / 2;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
   }
 
 
@@ -68,7 +69,7 @@
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
   }
 }
 

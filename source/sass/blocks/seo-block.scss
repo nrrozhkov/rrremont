@@ -1,8 +1,31 @@
+.seo-block {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.seo-block__img {
+  @media (min-width: $desktop-width) {
+    width: 41%;
+  }
+}
+
+.seo-block .wrapper {
+  @media (min-width: $desktop-width) {
+    width: 59%;
+    padding: 69px 80px 40px;
+  }
+}
+
 .seo-block__preheader {
   font-size: 30px;
   font-weight: 500;
   color: $basic-brown;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .seo-block__header {
@@ -10,6 +33,10 @@
   font-weight: 700;
   color: $basic-white;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .seo-block__results {
@@ -18,7 +45,42 @@
 }
 
 .seo-block__result-desc {
+  display: flex;
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 500;
   color: $basic-brown;
+}
+
+.seo-block__result-value {
+  color: white;
+}
+
+.seo-block__res {
+  width: 100%;
+  background: $basic-grey;
+  color: $basic-brown;
+  border: 0;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.seo-block__res::-webkit-progress-value {
+  background: $basic-brown;
+  border-radius: 3px;
+}
+
+.seo-block__res::-moz-progress-bar {
+  background: $basic-grey;
+  border-radius: 3px;
+}
+
+.seo-block__res::-webkit-progress-value {
+  background: $basic-brown;
+  border-radius: 3px;
+}
+
+.seo-block__res::-webkit-progress-bar {
+  background: $basic-grey;
+  border-radius: 3px;
 }
