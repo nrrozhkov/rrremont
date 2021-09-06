@@ -1,22 +1,59 @@
-.page-header .wrapper {
+.page-header {
+  background-color: $basic-grey;
+  padding: 29px 0;
+}
+
+.page-header {
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 748px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 944px;
   }
 }
 
+.page-header__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
 .page-header__logo {
-  height: 72px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     height: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.page-header__inner-button {
+  align-self: end;
+  position: relative;
+  display: block;
+  padding: 0;
+  width: 70px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.page-header__inner-button::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 1px;
+  width: 31px;
+  height: 2px;
+  background-color: $basic-white;
+  box-shadow: 0 8px 0 0 $basic-white, 0 16px 0 0 $basic-white;
 }

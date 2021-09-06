@@ -12,38 +12,49 @@
 </head>
 <body class="page__body">
 <header class="page-header">
-  <div class="wrapper">
+  <div class="page-header__inner">
     <a href="#" class="page-header__logo">
       <img src="img/main-logo.png" width="268" height="42" alt="Логотип компании rrremont">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="page-header__inner-button" type="button">
+      <span class="visually-hidden">Открыть меню</span></button>
+  </div>
+    <nav class="main-nav main-nav--closed">
+      <div class="main-nav__header">
+        <a href="#" class="main-nav__header-logo-container">
+          <img src="img/main-logo.png" alt="Логотип компании rrremont" width="245" height="90" class="main-nav__header-logo">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Закрыть меню</span></button>
+      </div>
       <ul class="main-nav__list divisions">
-        <li class="main-nav__item divisions__item"><a href="#" class="main-nav__item-link divisions__item-link">На
+        <li class="main-nav__item divisions__item">
+          <a href="#" class="main-nav__item-link divisions__item-link">На
           главную</a></li>
-        <li class="main-nav__item divisions__item"><a href="#" class="main-nav__item-link divisions__item-link">О
+        <li class="main-nav__item divisions__item">
+          <a href="#" class="main-nav__item-link divisions__item-link">О
           нас</a>
         </li>
-        <li class="main-nav__item divisions__item"><a href="#"
-                                                      class="main-nav__item-link divisions__item-link">Портфолио</a>
+        <li class="main-nav__item divisions__item">
+          <a href="#" class="main-nav__item-link divisions__item-link">Портфолио</a>
         </li>
-        <li class="main-nav__item divisions__item"><a href="#"
-                                                      class="main-nav__item-link divisions__item-link">Услуги</a>
+        <li class="main-nav__item divisions__item">
+          <a href="#" class="main-nav__item-link divisions__item-link">Услуги</a>
         </li>
-        <li class="main-nav__item divisions__item"><a href="#"
-                                                      class="main-nav__item-link divisions__item-link">Контакты</a></li>
-      </ul>
-      <ul class="main-nav__list aside">
-        <li class="aside__item"><a href="#" class="aside__facebook">facebook</a></li>
-        <li class="aside__item"><a href="#" class="aside__instagram">instagram</a></li>
-        <li class="aside__item"><a href="#" class="aside__vk">vk</a></li>
-        <li class="aside__item"><a href="#" class="aside__whatsapp">whatsapp</a></li>
-        <li class="aside__item"><a href="#" class="aside__telegram">telegram</a></li>
-        <li class="aside__item"><a href="#" class="aside__viber">viber</a></li>
-        <li class="aside__item"><a href="#" class="aside__telegram">telegram</a></li>
+        <li class="main-nav__item divisions__item">
+          <a href="#" class="main-nav__item-link divisions__item-link">Контакты</a></li>
       </ul>
     </nav>
-  </div>
+    <!-- TODO: сверстать страницу контактов -->
+<!--    <ul class="main-nav__list aside">-->
+<!--      <li class="aside__item"><a href="#" class="aside__facebook">facebook</a></li>-->
+<!--      <li class="aside__item"><a href="#" class="aside__instagram">instagram</a></li>-->
+<!--      <li class="aside__item"><a href="#" class="aside__vk">vk</a></li>-->
+<!--      <li class="aside__item"><a href="#" class="aside__whatsapp">whatsapp</a></li>-->
+<!--      <li class="aside__item"><a href="#" class="aside__telegram">telegram</a></li>-->
+<!--      <li class="aside__item"><a href="#" class="aside__viber">viber</a></li>-->
+<!--      <li class="aside__item"><a href="#" class="aside__telegram">telegram</a></li>-->
+<!--    </ul>-->
 </header>
 <main class="page-main">
   <section class="main-offer">
@@ -359,5 +370,6 @@
 <div class="copyright">
   <p class="copyright__desc">Copyright © 2021 rrremont. All Right Reserved.</p>
 </div>
+<script src="js/main.js" type="module"></script>
 </body>
 </html>

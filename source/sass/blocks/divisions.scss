@@ -5,6 +5,14 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    //width: 530px;
   }
+}
+.divisions__item {
+  border-bottom: solid 1px #ffffff17;
+  height: 100%;
+}
+
+.divisions__item-link {
+  display: block;
+  padding: 20px 13px;
 }
