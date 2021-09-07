@@ -1,18 +1,19 @@
 .page-header {
   background-color: $basic-grey;
-  padding: 29px 0;
+  padding: 15px 0;
 }
 
-.page-header {
+.page-header .page-header__container {
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -29,10 +30,6 @@
   @media (min-width: $tablet-width) {
     height: 63px;
   }
-
-  @media (min-width: $desktop-width) {
-    order: 2;
-  }
 }
 
 .page-header__inner-button {
@@ -45,6 +42,10 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__inner-button::before {
@@ -56,4 +57,8 @@
   height: 2px;
   background-color: $basic-white;
   box-shadow: 0 8px 0 0 $basic-white, 0 16px 0 0 $basic-white;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+  }
 }

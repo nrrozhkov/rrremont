@@ -14,21 +14,24 @@
 .how-we-work__subpreheader {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
-    top: -63px;
+    top: -37px;
     right: 0;
     left: 0;
     display: block;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     color: $minor-header;
     letter-spacing: 12px;
     margin: 0 auto;
     text-transform: uppercase;
     z-index: -1;
-
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 80px;
+    top: -62px;
   }
 }
 
@@ -65,7 +68,6 @@
 .how-we-work__item {
   padding-top: 100px;
   margin-bottom: 48px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -80,7 +82,7 @@
   }
 }
 
-.how-we-work__first::before {
+.how-we-work__first .how-we-work__item-header::before {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
@@ -90,21 +92,21 @@
   content: "01";
   width: 100px;
   height: 100px;
-  top: 0;
-  left: 80px;
+  top: -122px;
+  right: 234px;
   border: 6px solid rgb(57, 63, 69);
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    left: 117px;
+    left: 165px;
   }
 
-  @media (min-width: $tablet-width) {
-    left: 68px;
+  @media (min-width: $desktop-width) {
+    left: 55px;
   }
 }
 
-.how-we-work__second::before {
+.how-we-work__second .how-we-work__item-header::before {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
@@ -114,21 +116,21 @@
   content: "02";
   width: 100px;
   height: 100px;
-  top: 0;
-  left: 80px;
+  top: -122px;
+  right: 234px;
   border: 6px solid rgb(57, 63, 69);
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    left: 117px;
+    left: 165px;
   }
 
-  @media (min-width: $tablet-width) {
-    left: 68px;
+  @media (min-width: $desktop-width) {
+    left: 55px;
   }
 }
 
-.how-we-work__third::before {
+.how-we-work__third .how-we-work__item-header::before {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
@@ -138,21 +140,21 @@
   content: "03";
   width: 100px;
   height: 100px;
-  top: 0;
-  left: 80px;
+  top: -122px;
+  right: 234px;
   border: 6px solid rgb(57, 63, 69);
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    left: 117px;
+    left: 165px;
   }
 
-  @media (min-width: $tablet-width) {
-    left: 68px;
+  @media (min-width: $desktop-width) {
+    left: 55px;
   }
 }
 
-.how-we-work__fourth::before {
+.how-we-work__fourth .how-we-work__item-header::before {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
@@ -162,17 +164,17 @@
   content: "04";
   width: 100px;
   height: 100px;
-  top: 0;
-  left: 80px;
+  top: -122px;
+  right: 234px;
   border: 6px solid rgb(57, 63, 69);
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    left: 117px;
+    left: 165px;
   }
 
-  @media (min-width: $tablet-width) {
-    left: 68px;
+  @media (min-width: $desktop-width) {
+    left: 55px;
   }
 }
 

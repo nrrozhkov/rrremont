@@ -1,18 +1,26 @@
 .divisions {
-  outline: 2px solid red;
-  outline-offset: -5px;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-  }
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+    }
 }
+
 .divisions__item {
   border-bottom: solid 1px #ffffff17;
   height: 100%;
+
+    @media (min-width: $desktop-width) {
+     width: auto;
+     border: none;
+  }
 }
 
 .divisions__item-link {
   display: block;
   padding: 20px 13px;
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    padding: 0 13px;
+  }
 }
