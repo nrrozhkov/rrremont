@@ -3,11 +3,13 @@
 }
 
 .how-we-work__preheader {
-  font-size: 16px;
-  color: $basic-brown;
-  text-align: center;
-  margin: 0;
   position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #c6a47e;
+  letter-spacing: 2px;
+  z-index: 1;
 }
 
 
@@ -29,6 +31,7 @@
     text-transform: uppercase;
     z-index: -1;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 80px;
     top: -62px;
@@ -51,6 +54,7 @@
   font-weight: 500;
   position: relative;
   text-align: center;
+  z-index: 1;
 }
 
 .how-we-work__item-header::after {
@@ -66,7 +70,6 @@
 }
 
 .how-we-work__item {
-  padding-top: 100px;
   margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
@@ -74,7 +77,6 @@
     font-size: 14px;
     text-align: center;
     padding: 0 15px;
-    padding-top: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,90 +84,16 @@
   }
 }
 
-.how-we-work__first .how-we-work__item-header::before {
+.how-we-work__item-header-pre {
+  display: block;
   font-size: 32px;
   font-weight: 500;
   text-align: center;
   vertical-align: bottom;
   padding: 14px;
-  position: absolute;
-  content: "01";
   width: 100px;
   height: 100px;
-  top: -122px;
-  right: 234px;
-  border: 6px solid rgb(57, 63, 69);
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    left: 165px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 55px;
-  }
-}
-
-.how-we-work__second .how-we-work__item-header::before {
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-  vertical-align: bottom;
-  padding: 14px;
-  position: absolute;
-  content: "02";
-  width: 100px;
-  height: 100px;
-  top: -122px;
-  right: 234px;
-  border: 6px solid rgb(57, 63, 69);
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    left: 165px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 55px;
-  }
-}
-
-.how-we-work__third .how-we-work__item-header::before {
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-  vertical-align: bottom;
-  padding: 14px;
-  position: absolute;
-  content: "03";
-  width: 100px;
-  height: 100px;
-  top: -122px;
-  right: 234px;
-  border: 6px solid rgb(57, 63, 69);
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    left: 165px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 55px;
-  }
-}
-
-.how-we-work__fourth .how-we-work__item-header::before {
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-  vertical-align: bottom;
-  padding: 14px;
-  position: absolute;
-  content: "04";
-  width: 100px;
-  height: 100px;
-  top: -122px;
-  right: 234px;
+  margin: 0 auto;
   border: 6px solid rgb(57, 63, 69);
   border-radius: 50%;
 

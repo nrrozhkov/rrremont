@@ -59,8 +59,13 @@
   }
 }
 
+.complete-works__link {
+  display: block;
+}
+
 .complete-works__item {
   position: relative;
+
   @media (min-width: $tablet-width) {
     max-height: 100%;
   }
