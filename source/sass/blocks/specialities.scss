@@ -1,16 +1,38 @@
 .specialities {
   background-color: $basic-grey;
   padding: 50px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
 }
 
 .specialities__examples {
   padding: 0;
+  margin: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin: 0;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.specialities__examples-link {
+  display: block;
+}
+
+.specialities__example-item:nth-child(even) {
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
   }
 }
 
@@ -23,10 +45,11 @@
   }
 }
 
-.specialities__example-floor,
-.specialities__example-interior,
-.specialities__example-construction,
-.specialities__example-arcitecture {
+.specialities__headers {
+  margin-bottom: 47px;
+}
+
+.specialities__example-item {
   position: relative;
   z-index: 0;
 }
@@ -36,12 +59,22 @@
     grid-column: 1;
     grid-row: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 1;
+  }
 }
 
 .specialities__example-interior {
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 2;
   }
 }
 
@@ -50,6 +83,11 @@
     grid-column: 1;
     grid-row: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 4;
+  }
 }
 
 .specialities__example-arcitecture {
@@ -57,9 +95,26 @@
     grid-column: 2;
     grid-row: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 3;
+  }
 }
 
-.specialities__example-item::after {
+.specialities__example-item:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(33, 37, 41, 0.86) 100%);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.specialities__example-item:nth-child(odd)::after {
   content: "";
   position: absolute;
   top: 0;
@@ -75,6 +130,11 @@
   position: absolute;
   z-index: 1;
   bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 15px;
+    text-align: left;
+  }
 }
 
 
@@ -130,6 +190,13 @@
   margin: 0;
   text-align: center;
   z-index: 1;
+  font-weight: 500;
+  text-transform: capitalize;
+
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .specialities__desc {
@@ -137,6 +204,10 @@
   margin: 0;
   text-align: center;
   z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .specialities__example-img {

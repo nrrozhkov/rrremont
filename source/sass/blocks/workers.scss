@@ -1,6 +1,10 @@
 .workers {
   background-color: $basic-grey;
   padding: 50px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
 }
 
 .workers__preheader {

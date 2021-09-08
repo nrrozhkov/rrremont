@@ -1,6 +1,13 @@
 .seo-block {
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+    padding: 0;
   }
 }
 
@@ -13,7 +20,7 @@
 .seo-block .wrapper {
   @media (min-width: $desktop-width) {
     width: 59%;
-    padding: 69px 80px 40px;
+    padding: 69px 80px 80px;
   }
 }
 
@@ -22,6 +29,7 @@
   font-weight: 500;
   color: $basic-brown;
   text-align: center;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     text-align: left;

@@ -27,8 +27,8 @@
 
 .main-offer__headers .wrapper {
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -93,19 +93,6 @@
   }
 }
 
-.main-offer__headers-minor_header {
-  font-size: 68px;
-  font-weight: 900;
-  color: $minor-header;
-  display: none;
-  margin: 0;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-
 .main-offer__tel {
   background-color: $basic-brown;
   align-self: center;
@@ -114,6 +101,10 @@
   @media (min-width: $tablet-width) {
     align-self: flex-start;
     padding: 20px 40px;
+  }
 
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
+    width: 50%;
   }
 }

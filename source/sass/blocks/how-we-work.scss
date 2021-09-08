@@ -1,5 +1,9 @@
 .how-we-work {
   padding: 50px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
 }
 
 .how-we-work__preheader {
