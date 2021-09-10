@@ -27,7 +27,13 @@
 }
 
 .specialities__examples-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: $desktop-width) {
+    height: 450px;
+  }
 }
 
 .specialities__example-item:nth-child(even) {
@@ -40,7 +46,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 47px;
   }
 }
@@ -105,13 +112,17 @@
 .specialities__example-item:nth-child(even)::after {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(33, 37, 41, 0.86) 100%);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+  }
 }
 
 .specialities__example-item:nth-child(odd)::after {
@@ -127,14 +138,10 @@
 }
 
 .specialities__desc-container {
-  position: absolute;
+  margin-top: -155px;
   z-index: 1;
   bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    padding: 30px 15px;
-    text-align: left;
-  }
+  padding: 30px 15px;
 }
 
 
@@ -211,6 +218,7 @@
 }
 
 .specialities__example-img {
+  display: block;
   width: 100%;
   height: 100%;
 }

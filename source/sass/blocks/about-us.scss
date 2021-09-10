@@ -99,11 +99,14 @@
 
 .about-us__img {
   height: 100%;
+  width: 100%;
   position: relative;
   justify-self: end;
 }
 
 .about-us__img2 {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     z-index: 1;
     top: 0;
