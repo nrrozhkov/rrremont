@@ -9,7 +9,7 @@ for (let item of completeWork) {
         document.body.append(article);
 
         closeButton.onclick = () => {
-            document.querySelector('.work-demonstration').style.display = 'none';
+            article.remove();
         };
     });
 }
