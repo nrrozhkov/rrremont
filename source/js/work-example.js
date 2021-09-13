@@ -32,6 +32,7 @@ for (let i = 0; i < completeWork.length; i++) {
         prevButton.addEventListener('click', function () {
             if (i === 0) {
                 image.src = imageContainer[6];
+                i = 6;
             } else {
                 image.src = imageContainer[i--];
             }
