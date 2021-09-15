@@ -51,39 +51,3 @@
   }
 }
 
-
-.workers__list {
-  list-style: none;
-  padding: 0;
-}
-
-.workers__list-item {
-  display: none;
-}
-
-.workers__list-item-current {
-  display: block;
-}
-
-.workers__list .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.workers__name {
-  font-size: 18px;
-  text-transform: capitalize;
-  color: $basic-white;
-  font-weight: 500;
-  margin: 0;
-}
-
-.workers__desc {
-  margin: 0;
-  color: $basic-white;
-}
-
-.workers__img {
-  width: 100%;
-}

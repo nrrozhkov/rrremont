@@ -1,0 +1,30 @@
+.slider {
+  list-style: none;
+  padding: 0;
+}
+
+.slider__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-brown;
+}
+
+.slider__name {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  color: $basic-white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.slider__desc {
+  margin: 0;
+  color: $basic-white;
+  text-align: center;
+}
+
+.slider__img {
+  width: 100%;
+}

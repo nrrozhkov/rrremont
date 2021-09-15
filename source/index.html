@@ -14,7 +14,7 @@
 <header class="page-header">
   <div class="page-header__container">
     <div class="page-header__inner">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img src="img/main-logo.png" width="268" height="42" alt="Логотип компании rrremont">
       </a>
       <button class="page-header__inner-button" type="button">
@@ -23,7 +23,8 @@
     <nav class="main-nav main-nav--closed">
       <div class="main-nav__header">
         <a href="#" class="main-nav__header-logo-container">
-          <img src="img/main-logo.png" alt="Логотип компании rrremont" width="245" height="90" class="main-nav__header-logo">
+          <img src="img/main-logo.png" alt="Логотип компании rrremont" width="245" height="90"
+               class="main-nav__header-logo">
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню</span></button>
@@ -43,7 +44,7 @@
           <a href="#" class="main-nav__item-link divisions__item-link">Услуги</a>
         </li>
         <li class="main-nav__item divisions__item">
-          <a href="#" class="main-nav__item-link divisions__item-link">Контакты</a></li>
+          <a href="contacts.html" class="main-nav__item-link divisions__item-link">Контакты</a></li>
       </ul>
     </nav>
     <!-- TODO: сверстать страницу контактов -->
@@ -80,7 +81,8 @@
     <h2 class="visually-hidden">Наша специализация</h2>
     <div class="specialities__headers">
       <div class="wrapper">
-        <h4 class="specialities__headers-desc">TOP SERVICES<span class="specialities__headers-desc-ghost">TOP SERVICES</span> </h4>
+        <h4 class="specialities__headers-desc">TOP SERVICES<span
+          class="specialities__headers-desc-ghost">TOP SERVICES</span></h4>
         <h2 class="specialities__headers__main-header">Our Specializations</h2>
       </div>
     </div>
@@ -151,7 +153,8 @@
   </section>
   <section class="complete-works">
     <h2 class="visually-hidden">Выполненные работы</h2>
-    <h4 class="complete-works__subheader">our project<span class="complete-works__subheader-ghost">our project</span></h4>
+    <h4 class="complete-works__subheader">our project<span class="complete-works__subheader-ghost">our project</span>
+    </h4>
     <h2 class="complete-works__main-header">Recently Completed Works</h2>
     <ul class="complete-works__list">
       <li class="complete-works__item complete-works__item1">
@@ -255,45 +258,14 @@
     <h4 class="workers__preheader"><span class="workers__preheader-item">our team</span>our team</h4>
     <h2 class="workers__header">our architects</h2>
     <div class="wrapper">
-      <ul class="workers__list">
-        <li class="workers__list-item workers__list-item-current">
-          <a href="#" class="workers__list-link">
-            <img src="img/worker1.jpeg" width="208" height="375" alt="" class="workers__img">
-            <p class="workers__name">Molly Nicola</p>
-            <p class="workers__desc">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua Quis suspendisse.</p>
-          </a>
-        </li>
-        <li class="workers__list-item">
-          <a href="#" class="workers__list-link">
-            <img src="img/worker2.jpeg" width="208" height="375" alt="" class="workers__img">
-            <p class="workers__name">Molly Nicola</p>
-            <p class="workers__desc">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua Quis suspendisse.</p>
-          </a>
-        </li>
-        <li class="workers__list-item">
-          <a href="#" class="workers__list-link">
-            <img src="img/worker3.jpeg" width="208" height="375" alt="" class="workers__img">
-            <p class="workers__name">Davies Hunter</p>
-            <p class="workers__desc">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua Quis suspendisse.</p>
-          </a>
-        </li>
-        <li class="workers__list-item">
-          <a href="#" class="workers__list-link">
-            <img src="img/worker4.jpeg" width="208" height="375" alt="" class="workers__img">
-            <p class="workers__name">Poole Slater</p>
-            <p class="workers__desc">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua Quis suspendisse.</p>
-          </a>
-        </li>
-        <li class="workers__list-item">
-          <a href="#" class="workers__list-link">
-            <img src="img/worker4.jpeg" width="208" height="375" alt="" class="workers__img">
-            <p class="workers__name">Davies Hunter</p>
-            <p class="workers__desc">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua Quis suspendisse.</p>
+      <ul class="workers__list slider">
+        <li class="slider-item">
+          <a href="#" class="slider__link">
+            <img src="img/worker1.jpeg" width="208" height="375" alt="" class="slider__img">
+            <div class="slider__desc-group">
+              <p class="slider__name">Molly Nicola</p>
+              <p class="slider__desc">Designer</p>
+            </div>
           </a>
         </li>
       </ul>
@@ -380,14 +352,28 @@
 <template id="card">
   <article class="work-demonstration">
     <div class="wrapper">
-      <button class="work-demonstration__left work-demonstration__button"><span class="visually-hidden">Влево</span></button>
+      <button class="work-demonstration__left work-demonstration__button"><span class="visually-hidden">Влево</span>
+      </button>
       <div class="work-demonstration__img-wrapper">
         <button class="work-demonstration__close"><span class="visually-hidden">Закрыть</span></button>
-        <img src="img/service-example1.jpeg" class="work-demonstration__img" width="292" height="460" alt="Аватар пользователя">
+        <img src="img/service-example1.jpeg" class="work-demonstration__img" width="292" height="460"
+             alt="Аватар пользователя">
       </div>
-      <button class="work-demonstration__right work-demonstration__button"><span class="visually-hidden">Вправо</span></button>
+      <button class="work-demonstration__right work-demonstration__button"><span class="visually-hidden">Вправо</span>
+      </button>
     </div>
   </article>
+</template>
+
+<!--Карточка работника-->
+<template id="slide">
+  <li class="slider-item">
+    <a href="#" class="slider-link">
+      <img src="" width="208" height="375" alt="" class="slider__img">
+      <p class="slider__name"></p>
+      <p class="slider__desc"></p>
+    </a>
+  </li>
 </template>
 <script src="js/main.js" type="module"></script>
 </body>
