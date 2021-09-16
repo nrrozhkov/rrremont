@@ -106,6 +106,7 @@
   &::after {
     transform: rotate(-45deg);
   }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
