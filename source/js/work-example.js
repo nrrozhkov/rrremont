@@ -1,12 +1,12 @@
 const completeWork = document.querySelectorAll('.complete-works__item');
 const imageContainer = [];
-imageContainer[0] = 'img/done_work1.jpeg';
-imageContainer[1] = 'img/done_work2.jpeg';
-imageContainer[2] = 'img/done-work3.jpeg';
-imageContainer[3] = 'img/done_work4.jpeg';
-imageContainer[4] = 'img/done_work5.jpeg';
-imageContainer[5] = 'img/done_work6.jpeg';
-imageContainer[6] = 'img/done_work7.jpeg';
+imageContainer[0] = 'img/done_work1.webp';
+imageContainer[1] = 'img/done_work2.webp';
+imageContainer[2] = 'img/done-work3.webp';
+imageContainer[3] = 'img/done_work4.webp';
+imageContainer[4] = 'img/done_work5.webp';
+imageContainer[5] = 'img/done_work6.webp';
+imageContainer[6] = 'img/done_work7.webp';
 const workExample = document.querySelector('#card').content.querySelector('.work-demonstration');
 
 for (let i = 0; i < completeWork.length; i++) {

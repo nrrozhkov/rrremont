@@ -10,4 +10,12 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background-color: $basic-brown-hover;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

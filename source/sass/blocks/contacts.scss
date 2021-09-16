@@ -33,6 +33,13 @@
   list-style: none;
   padding: 80px 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .contacts__item {
@@ -41,6 +48,24 @@
   border: 1px solid $basic-black;
   background-color: $basic-black;
   margin-bottom: 30px;
+
+  &:hover {
+    transition: 1s;
+    border: 1px solid $basic-brown;
+
+    .contacts__item-icon {
+      opacity: 1.5;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: 0s;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 48%;
+  }
 }
 
 .contacts__link {
@@ -49,11 +74,16 @@
   color: $basic-white;
 }
 
+.contacts__item-icon {
+  width: 60px;
+  height: 60px;
+  fill: $basic-brown;
+}
+
 .contacts__name {
   font-size: 22px;
   font-weight: 500;
   position: relative;
-  padding-top: 86px;
   margin: 0 auto 10px;
   border-bottom: 2px solid $basic-brown;
   width: min-content;
