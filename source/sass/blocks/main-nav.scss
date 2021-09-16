@@ -51,12 +51,16 @@
   background-color: $button-after;
   width: 2px;
   height: 25px;
-  right: -10px;
-  top: 7px;
+  right: 60px;
+  top: 35px;
 
   @media (min-width: $tablet-width) {
     right: 60px;
     top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -71,6 +75,14 @@
 }
 
 .main-nav__toggle {
+  position: relative;
+  color: transparent;
+  background-color: $button-close;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
   top: 0;
   right: auto;
   left: 0;
@@ -93,5 +105,8 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
