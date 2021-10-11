@@ -1,2 +1,7 @@
 # rrremont
-Adaptive site for house renovation company
+Adaptive site for house renovation company.
+
+Mobile, desktop & tablet versions.
+
+Pure js photo slider.
+
