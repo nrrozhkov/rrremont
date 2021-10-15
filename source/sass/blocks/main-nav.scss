@@ -34,6 +34,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 29px 15px;
 
   @media (min-width: $desktop-width) {
@@ -43,25 +44,6 @@
 
 .main-nav__header-logo-container {
   width: 75%;
-}
-
-.main-nav__header-logo-container::after {
-  position: absolute;
-  content: "";
-  background-color: $button-after;
-  width: 2px;
-  height: 25px;
-  right: 60px;
-  top: 35px;
-
-  @media (min-width: $tablet-width) {
-    right: 60px;
-    top: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .main-nav__list {

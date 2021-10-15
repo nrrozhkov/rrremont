@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0 30px;
 }
 
@@ -47,14 +48,10 @@
 .page-header__inner-button::before {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 15px;
   right: 1px;
   width: 31px;
   height: 2px;
   background-color: $basic-white;
   box-shadow: 0 8px 0 0 $basic-white, 0 16px 0 0 $basic-white;
-
-  @media (min-width: $tablet-width) {
-    top: 8px;
-  }
 }
